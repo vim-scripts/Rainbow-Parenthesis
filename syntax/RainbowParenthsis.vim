@@ -34,23 +34,25 @@ hi level14c ctermfg=darkcyan
 hi level15c ctermfg=darkred
 hi level16c ctermfg=red
 
+
+
 " These are the regions for each pair.
 " This could be improved, perhaps, by makeing them match [ and { also,
 " but I'm not going to take the time to figure out haw to make the
 " end pattern match only the proper type.
-syn region level1 matchgroup=level1c start=/(/ end=/)/ contains=ALLBUT,level1,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16
-syn region level2 matchgroup=level2c start=/(/ end=/)/ contains=ALLBUT,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16
-syn region level3 matchgroup=level3c start=/(/ end=/)/ contains=ALLBUT,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16
-syn region level4 matchgroup=level4c start=/(/ end=/)/ contains=ALLBUT,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16
-syn region level5 matchgroup=level5c start=/(/ end=/)/ contains=ALLBUT,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16
-syn region level6 matchgroup=level6c start=/(/ end=/)/ contains=ALLBUT,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16
-syn region level7 matchgroup=level7c start=/(/ end=/)/ contains=ALLBUT,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16
-syn region level8 matchgroup=level8c start=/(/ end=/)/ contains=ALLBUT,level8,level9,level10,level11,level12,level13,level14,level15, level16
-syn region level9 matchgroup=level9c start=/(/ end=/)/ contains=ALLBUT,level9,level10,level11,level12,level13,level14,level15, level16
-syn region level10 matchgroup=level10c start=/(/ end=/)/ contains=ALLBUT,level10,level11,level12,level13,level14,level15, level16
-syn region level11 matchgroup=level11c start=/(/ end=/)/ contains=ALLBUT,level11,level12,level13,level14,level15, level16
-syn region level12 matchgroup=level12c start=/(/ end=/)/ contains=ALLBUT,level12,level13,level14,level15, level16
-syn region level13 matchgroup=level13c start=/(/ end=/)/ contains=ALLBUT,level13,level14,level15, level16
-syn region level14 matchgroup=level14c start=/(/ end=/)/ contains=ALLBUT,level14,level15, level16
-syn region level15 matchgroup=level15c start=/(/ end=/)/ contains=ALLBUT,level15, level16
-syn region level16 matchgroup=level16c start=/(/ end=/)/ contains=ALLBUT,level16
+syn region level1 matchgroup=level1c start=/(/ end=/)/ contains=TOP,level1,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level2 matchgroup=level2c start=/(/ end=/)/ contains=TOP,level2,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level3 matchgroup=level3c start=/(/ end=/)/ contains=TOP,level3,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level4 matchgroup=level4c start=/(/ end=/)/ contains=TOP,level4,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level5 matchgroup=level5c start=/(/ end=/)/ contains=TOP,level5,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level6 matchgroup=level6c start=/(/ end=/)/ contains=TOP,level6,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level7 matchgroup=level7c start=/(/ end=/)/ contains=TOP,level7,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level8 matchgroup=level8c start=/(/ end=/)/ contains=TOP,level8,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level9 matchgroup=level9c start=/(/ end=/)/ contains=TOP,level9,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level10 matchgroup=level10c start=/(/ end=/)/ contains=TOP,level10,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level11 matchgroup=level11c start=/(/ end=/)/ contains=TOP,level11,level12,level13,level14,level15, level16,NoInParens
+syn region level12 matchgroup=level12c start=/(/ end=/)/ contains=TOP,level12,level13,level14,level15, level16,NoInParens
+syn region level13 matchgroup=level13c start=/(/ end=/)/ contains=TOP,level13,level14,level15, level16,NoInParens
+syn region level14 matchgroup=level14c start=/(/ end=/)/ contains=TOP,level14,level15, level16,NoInParens
+syn region level15 matchgroup=level15c start=/(/ end=/)/ contains=TOP,level15, level16,NoInParens
+syn region level16 matchgroup=level16c start=/(/ end=/)/ contains=TOP,level16,NoInParens
